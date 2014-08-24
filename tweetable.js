@@ -3,6 +3,7 @@ $(function() {
   $('a.tweetable').each(function(){
     var content = $(this).html();
     console.log(content);
+    //TODO - Add a link to the current page to the tweet
     $(this).attr('href', 'http://twitter.com/home?status=' + content + ' via @wingchi'); //add your twitter handle here
     //feel free to remove any of the following stuff
     $(this).attr('target', '_blank'); //open 
